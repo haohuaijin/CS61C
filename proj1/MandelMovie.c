@@ -31,7 +31,7 @@ void MandelMovie(double threshold, long max_iterations, ComplexNumber* center, d
     //YOUR CODE HERE
 	for(int i=0; i<framecount; i++){
 		double scale = initialscale * pow((double)finalscale / (double)initialscale, (double)i / (double)(framecount-1));
-		printf("%lf\n", scale);
+		//printf("%lf\n", scale);
 		Mandelbrot(threshold, max_iterations, center, scale, resolution, output[i]);
 	}	
 }
@@ -170,9 +170,13 @@ int main(int argc, char* argv[])
 	}
 	free(output);
 
+	for(int i=0; i<(*colorcount); i++){
+		free(colormap[i]);
+	}
+	free(colormap);
+	free(colorcount);
 
-
-
+	free(center);
 	return 0;
 }
 
