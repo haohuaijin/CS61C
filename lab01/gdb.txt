@@ -1,0 +1,9 @@
+1.set args 10 20 30...
+2.break(b) linenum
+3.next or step
+4.nexti or stepi
+5.continue
+6.print(p)
+7.display varname
+8.(info locals) or (bt full)
+9.quit
