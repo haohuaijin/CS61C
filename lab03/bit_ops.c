@@ -11,9 +11,10 @@ unsigned get_bit(unsigned x,
     // 0 or 1)
 	
 	//return	((x>>n)<<31)>>(31);
-	return x>>n<<31>>31;
+	//return x>>n<<31>>31;
 	
-	//return -1;
+	// simple
+	return x>>n&1;
 }
 // Set the nth bit of the value of x to v.
 // Assume 0 <= n <= 31, and v is 0 or 1
@@ -47,10 +48,12 @@ void set_bit(unsigned * x,
 void flip_bit(unsigned * x,
               unsigned n) {
     // YOUR CODE HERE
-	unsigned a = get_bit(*x, n);
+	/*unsigned a = get_bit(*x, n);
 	a = ~a;
 	a = a<<31>>31;
-	set_bit(x, n, a);
+	set_bit(x, n, a);*/
+	// simple
+	(*x) ^= (1 << n);
 }
 
 
