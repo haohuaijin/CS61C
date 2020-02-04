@@ -21,19 +21,25 @@ void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
     // YOUR CODE HERE
+	//方法：假设输入 x = 1001, n = 2, v = 1;
+	//构造v = 1111, a = 0100(把 x 的 n 位置为 1);
+	// x = x | a & v;
 	unsigned a = 1;
 	unsigned b = 0;
+	
 	b = ~b; 
 	b = b<<(n+1);
-
+	
+	// 构造 v; v = 1x11, x是要改变成的值 0 or 1.
 	v = ~v;
 	v = v << n;
 	v = ~v;
 	v = v|b;
-
+	
+	// 把 x 的 n 位置为 1
 	a = a << n;
-
 	(*x) = (*x)|a;
+	
 	(*x) = (*x)&v;
 }
 // Flip the nth bit of the value of x.
