@@ -116,6 +116,7 @@ void vector_set(vector_t *v, size_t loc, int value) {
     /* What do you need to do if the location is greater than the size we have
      * allocated?  Remember that unset locations should contain a value of 0.
      */
+    //下面的错了，没有改变数组的大小，要改变大小只能用第二种方法
     // magic; make me deep in the struct and the pointer;
     /* //the answer is true. but the memory check is wrong.
     if(loc < v->size){
@@ -128,6 +129,7 @@ void vector_set(vector_t *v, size_t loc, int value) {
         }
         v->data[loc] = value;
     }*/
+    // 2
     if(loc < v->size){
         v->data[loc] = value;
     } else { // auto grow up
