@@ -18,7 +18,7 @@
 
 - `fprintf(FILE *, const char *, ... )`。
 
-- `sprintf(char *, const char *, ... )`。可以批量，指定格式的构造字符串。
+- `sprintf(char *, const char *, ... )`。可以产生批量，指定格式的字符串。
 
 ## 3.`u_int64_t`, `uint8_t`, `long`
 - 实际的应用无特殊情况，没必要用`u_int64_t` 和 `uint8_t`, 用`int`, `long` 和 `unsigned int` 就足够了。
