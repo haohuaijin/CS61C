@@ -72,7 +72,7 @@ map:
     # Put the address of the function back into a1 to prepare for the recursion
     # THINK: why a1? What about a0?
     ### YOUR CODE HERE ###
-    add a1, a0, x0
+    add a1, a1, x0
 
     # recurse
     ### YOUR CODE HERE ###
@@ -93,12 +93,12 @@ square:
 
 create_default_list:
     addi sp, sp, -12
-    sw  ra, 0(sp)
+    sw  ra, 8(sp)
     sw  s0, 4(sp)
-    sw  s1, 8(sp)
+    sw  s1, 0(sp)
     li  s0, 0       # pointer to the last node we handled
     li  s1, 0       # number of nodes handled
-loop:   #do...
+loop:   #do... #思考为什么这样写
     li  a0, 8
     jal ra, malloc      # get memory for the next node
     sw  s1, 0(a0)   # node->value = i
@@ -107,9 +107,9 @@ loop:   #do...
     addi    s1, s1, 1   # i++
     addi t0, x0, 10
     bne s1, t0, loop    # ... while i!= 10
-    lw  ra, 0(sp)
+    lw  s1, 0(sp)
     lw  s0, 4(sp)
-    lw  s1, 8(sp)
+    lw  ra, 8(sp)
     addi sp, sp, 12
     jr ra
 
