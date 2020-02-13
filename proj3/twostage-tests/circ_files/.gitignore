@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+alu.circ
+cpu.circ
+mem.circ
+regfile.circ
+output/
