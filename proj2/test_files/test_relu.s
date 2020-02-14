@@ -35,7 +35,7 @@ main:
     mv a0 s0
     mv a1 s1
     mv a2 s2
-    jal print_int_array
+	jal print_int_array
 
     # Exit
-    jal exit
+	jal exit

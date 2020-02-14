@@ -12,9 +12,9 @@
 relu:
     # Prologue
 	addi sp  sp  -12
-	lw ra  0(sp)
-	lw s0  4(sp)
-	lw s1  8(sp)
+	sw ra  0(sp)
+	sw s0  4(sp)
+	sw s1  8(sp)
 
 	add s0  a0  x0 # s0 save a0
 	add s1  a1  x0 # s1 save a1
@@ -33,9 +33,9 @@ loop_continue:
 
 loop_end:
     # Epilogue
-	sw s1  8(sp)
-	sw s0  4(sp)
-	sw ra  0(sp)
+	lw s1  8(sp)
+	lw s0  4(sp)
+	lw ra  0(sp)
     addi sp  sp  12
 	ret
 
