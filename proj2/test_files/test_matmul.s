@@ -11,7 +11,7 @@ d: .word 0 0 0 0 0 0 0 0 0 # allocate static space for output
 .text
 main:
     # Load addresses of input matrices (which are in static memory), and set their dimensions
-    
+	    
 
 
 

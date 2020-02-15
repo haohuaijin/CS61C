@@ -82,7 +82,7 @@ inner_loop_end:
     add a5 a5 t6
 
     addi t4 t4 1
-    beq t4 s4 out_loop_end
+    beq t4 s4 outer_loop_end
     j outer_loop_start
 
 outer_loop_end:
