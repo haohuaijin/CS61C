@@ -87,6 +87,8 @@ inner_loop_end:
 outer_loop_end:
 
     mv a6 s2
+    mv a1 s4
+    mv a5 s5
 
     # Epilogue
     lw s5 24(sp)

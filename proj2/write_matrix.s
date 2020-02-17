@@ -41,7 +41,6 @@ write_matrix:
     mv s0 a0 # save the file descriptor
 
     # write rows
-
     addi a0 x0 4
     jal ra malloc
     sw s2 0(a0)    
@@ -51,6 +50,7 @@ write_matrix:
     addi a4 x0 4
     jal ra fwrite
     bne a0 a3 eof_or_error
+
 
     # write colums
     addi a0 x0 4
@@ -63,7 +63,7 @@ write_matrix:
     jal ra fwrite
     bne a0 a3 eof_or_error
 
-
+    # write the rest
     mv a1 s0
     mv a2 s1
     mul t0 s2 s3 #the number of item
