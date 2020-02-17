@@ -64,13 +64,17 @@ read_matrix:
     beq a0 x0 eof_or_error # 如果未分配，报错
 
     mv a1 s0
-    mv a2 a0
+    mv a2 a0 # the pointer of the array
     mul a3 t1 t2
     slli a3 a3 2
     jal ra fread
     mul t0 t1 t2
     slli t0 t0 2
     bne t0 a0 eof_or_error
+
+    mv a1 s0
+    jal ra fclose
+    bne x0 a0 eof_or_error
 
     mv a0 a2 
     mv a1 s1

@@ -41,16 +41,23 @@ write_matrix:
     mv s0 a0 # save the file descriptor
 
     # write rows
+
+    addi a0 x0 4
+    jal ra malloc
+    sw s2 0(a0)    
     mv a1 s0
-    mv a2 s2
+    mv a2 a0
     addi a3 x0 1
     addi a4 x0 4
     jal ra fwrite
     bne a0 a3 eof_or_error
 
     # write colums
+    addi a0 x0 4
+    jal ra malloc
+    sw s3 0(a0)
     mv a1 s0
-    mv a2 s3
+    mv a2 a0
     addi a3 x0 1
     addi a4 x0 4
     jal ra fwrite
