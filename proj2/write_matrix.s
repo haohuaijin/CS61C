@@ -20,18 +20,44 @@
 write_matrix:
 
     # Prologue
+    addi sp sp -20
+    sw ra 0(sp)
+    sw s0 4(sp)
+    sw s1 8(sp)
+    sw s2 12(sp)
+    sw s3 16(sp)
 
+    mv s0 a0 # the file path
+    mv s1 a1 # the matrix
+    mv s2 a2 # the rows
+    mv s3 a3 # the columns
 
+    mv a1 s0
+    addi a2 x0 1
+    jal ra fopen
+    addi t0 x0 -1
+    beq t0 a0 eof_or_error
 
+    mv a1 a0
+    mv a2 s1
+    mul t0 s2 s3 #the number of item
+    mv a3 t0
+    addi t0 x0 4
+    mv a4 t0
+    jal ra fwrite
+    bne a0 a3 eof_or_error
 
-
-
-
+    jal ra fclose
+    bne a0 x0 eof_or_error
 
 
     # Epilogue
-
-
+    lw s3 16(sp)
+    lw s2 12(sp)
+    lw s1 8(sp)
+    lw s0 4(sp)
+    lw ra 0(sp)
+    addi sp sp 20
     ret
 
 eof_or_error:
