@@ -38,7 +38,26 @@ write_matrix:
     addi t0 x0 -1
     beq t0 a0 eof_or_error
 
-    mv a1 a0
+    mv s0 a0 # save the file descriptor
+
+    # write rows
+    mv a1 s0
+    mv a2 s2
+    addi a3 x0 1
+    addi a4 x0 4
+    jal ra fwrite
+    bne a0 a3 eof_or_error
+
+    # write colums
+    mv a1 s0
+    mv a2 s3
+    addi a3 x0 1
+    addi a4 x0 4
+    jal ra fwrite
+    bne a0 a3 eof_or_error
+
+
+    mv a1 s0
     mv a2 s1
     mul t0 s2 s3 #the number of item
     mv a3 t0
