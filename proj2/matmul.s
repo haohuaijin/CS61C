@@ -72,7 +72,7 @@ inner_loop_start:
     slli t6 t5 2
     add a1 a6 t6
 
-    beq t5 s5 inner_loop_end
+    beq t5 s4 inner_loop_end
     j inner_loop_start
 
 inner_loop_end:
@@ -81,7 +81,7 @@ inner_loop_end:
     add a5 a5 t6
 
     addi s3 s3 1
-    beq s3 s4 outer_loop_end
+    beq s3 s5 outer_loop_end
     j outer_loop_start
 
 outer_loop_end:

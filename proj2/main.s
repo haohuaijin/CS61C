@@ -116,6 +116,11 @@ main:
     mv s1 a6
     mv s2 a1 # rows
     mv s3 a5 # columns
+    
+    # mv a0 s1
+    # mv a1 s2
+    # mv a2 s3
+    # jal ra print_int_array
 
 
 # second relu

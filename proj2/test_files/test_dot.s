@@ -3,8 +3,8 @@
 
 # Set vector values for testing
 .data
-vector0: .word 1 2 3 4 5 6 7 8 9
-vector1: .word 1 2 3 4 5 6 7 8 9
+vector0: .word 4 5 6
+vector1: .word 1 1 1
 
 
 .text
@@ -19,7 +19,7 @@ main:
 	mv a1 s1
 	addi a2 x0 3
 	addi a3 x0 1
-	addi a4 x0 2
+	addi a4 x0 1
 
     # Call dot function
     jal ra dot
