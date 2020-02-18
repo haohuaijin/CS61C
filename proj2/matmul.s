@@ -45,6 +45,8 @@ matmul:
 
     add s3 x0 x0 # use to end the out loop i
 
+# 外层循环是 m1 的列
+# 内层循环是 m0 的行
 outer_loop_start:
     add t5 x0 x0 # use to the innner loop j
 
@@ -68,17 +70,22 @@ inner_loop_start:
     # modified the address
     addi t5 t5 1
 
-    add a0 a5 x0
-    slli t6 t5 2
-    add a1 a6 t6
+    mul t0 t5 a2
+    slli t0 t0 2
+    add a0 a5 t0
+    add a1 a6 x0
+    # add a0 a5 x0
+    # slli t6 t5 2
+    # add a1 a6 t6
 
     beq t5 s4 inner_loop_end
     j inner_loop_start
 
 inner_loop_end:
 
-    slli t6 a2 2 
-    add a5 a5 t6
+    addi a6 a6 4
+    # slli t6 a2 2 
+    # add a5 a5 t6
 
     addi s3 s3 1
     beq s3 s5 outer_loop_end
