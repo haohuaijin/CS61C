@@ -19,9 +19,10 @@ argmax:
 	sw s0 4(sp)
 	sw s1 8(sp)
 	
-	add s0 a0 x0
-	add s1 a1 x0
-	addi t0 x0 1
+	add s0 a0 x0 # the pointer
+	add s1 a1 x0 # the num
+	addi t0 x0 1 # the count
+	add t3 x0 x0 # the return
 	
 	# initial max to the first element of array
 	lw t1 0(s0)
@@ -32,6 +33,7 @@ loop_start:
 	lw t2 0(s0)
 	bge t1 t2 loop_continue
 	mv t1 t2 # max is t2
+	mv t3 t0 # the max index is t0
 
 loop_continue:
 	
@@ -43,7 +45,7 @@ loop_continue:
 
 loop_end:
 
-    mv a0 t1
+    mv a0 t3
 
 	# Epilogue
 	lw s1 8(sp)
