@@ -1,22 +1,23 @@
+网址: https://inst.eecs.berkeley.edu/~cs61c/fa19/labs/lab09/
 Exercise 1
 	Scenario 1
-		1. 
-		2.
-		3.
+		1. Because the step size in bytes is equal to cache size in bytes.
+		2. Never change. Because ever loop's ine the cache block is change so the hit rate is not change.
+		3. Change step size to 1. Or change array size to 32.
 
 	Scenario 2
-		1.
-		2.
-		3.
-		4.
-		5.
+		1. 2. lw and sw
+		2. miss hit hit hit. Because every address access twice and the cache block size is 16 and the step size is 8 in bytes.
+		3. Because the hit/miss pattern is answer 2, so the hit rate is 3/4 equal to 75%. 
+		4. The hit rate is close to 100%. Because the total cache can have 256 bytes equal to array size, so the by on loop, the array is in cache, the next loop is all hit.
+		5. address, access, address, adress. (the main point is separate block)
 
 	Scenario 3
-		1.
-		2.
-		3.
-		4.
-		5.
+		1. L1 50%. L2 0%. total 50%
+		2. 32 total. 16 missea.
+		3. 16 total. all misses.(if L1 miss, that access L2)
+		4. Change the repcount. Because the L2 total is equal to array. Only one loop that can all stored in L2. but L1 is the half of array size.
+		5. The hit rate of L1 is increase(if the repcount is more than 2). the L2 is always 0%. 
 
 Exercise 2
 	ijk:
