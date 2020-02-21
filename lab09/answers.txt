@@ -20,16 +20,17 @@ Exercise 1
 		5. The hit rate of L1 is increase(if the repcount is more than 2). the L2 is always 0%. 
 
 Exercise 2
-	ijk:
-	ikj:
-	jik:
-	jki:
-	kij:
-	kji:
+	ijk:	n = 1000, 0.721 Gflop/s
+	ikj:	n = 1000, 0.052 Gflop/s
+	jik:	n = 1000, 0.711 Gflop/s
+	jki:	n = 1000, 4.477 Gflop/s
+	kij:	n = 1000, 0.064 Gflop/s
+	kji:	n = 1000, 3.693 Gflop/s
 
-	1.
-	2.
-	3.
+	C[i + (j) * n] += A[i+ (k) * n] * B[k + (j) * n];
+	1. jki is the best. Because the innermost loop the cache access is very close.  
+	2. ikj is the worst. Because the innermost loop the cache access is vary far.
+	3. We should make the innermost loop access cache close.
 
 Exercise 3
 	Part 1
