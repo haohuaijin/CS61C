@@ -18,10 +18,12 @@ void transpose_blocking(int n, int blocksize, int *dst, int *src) {
     // YOUR CODE HERE
     for(int i=0; i < (n/blocksize+1); i++){
         for(int j=0; j < (n/blocksize+1); j++){
-            for(int m=i; m < i + blocksize; m++){
-                for(int k=j; k < j + blocksize; k++){
-                    if(m >= n || k >= n) continue;
-                    dst[i*n*blocksize + j*blocksize + k*blocksize + m] = src[j*n*blocksize + i*blocksize + m*blocksize + k];
+            //every block operator
+            for(int m=0; m < blocksize; m++){
+                for(int k=0; k < blocksize; k++){
+                    if(i*blocksize + m >= n || j*blocksize + k >= n) continue;
+                    dst[j*n*blocksize + i*blocksize + k*n + m] = src[i*n*blocksize + j*blocksize + m*n + k];
+                    //printf("%d %d\n",j*n*blocksize + i*blocksize + k*n + m, i*n*blocksize + j*blocksize + m*n + k);
                 }
             }
         }
