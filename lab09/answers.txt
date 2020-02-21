@@ -34,20 +34,22 @@ Exercise 2
 
 Exercise 3
 	Part 1
-		blocksize = 20, n = 100: 
-		blocksize = 20, n = 1000: 
-		blocksize = 20, n = 2000: 
-		blocksize = 20, n = 5000: 
-		blocksize = 20, n = 10000: 
+		blocksize = 20, n = 100:  0.099 
+		blocksize = 20, n = 1000:  1.367
+		blocksize = 20, n = 2000:  7.1
+		blocksize = 20, n = 5000:  56.499
+		blocksize = 20, n = 10000:  220.127
 
-		1.
-		2.
+		1. Yes
+		2. Because the cache size is a certain size. 
+		if the blocksize is more than cache size, the codeing can became not very useful.
 
 	Part 2
-		blocksize = 50, n = 10000:
-		blocksize = 100, n = 10000:
-		blocksize = 500, n = 10000:
-		blocksize = 1000, n = 10000:
-		blocksize = 5000, n = 10000:
+		blocksize = 50, n = 10000: 207.503
+		blocksize = 100, n = 10000: 181.191
+		blocksize = 500, n = 10000: 228.857
+		blocksize = 1000, n = 10000: 350.929
+		blocksize = 5000, n = 10000: 1591.45
 
-		1.
+		1. first reduce, Because the cache has certain size. 
+		when the blocksize is more than cachesize, the performance can be worse.
