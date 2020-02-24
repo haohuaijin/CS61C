@@ -133,10 +133,10 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <polyline fill="none" points="120,71 120,159" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="39,210 120,160" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="39,130 39,209" stroke="#000000" stroke-width="2"/>
-      <circ-port height="8" pin="200,250" width="8" x="36" y="166"/>
       <circ-port height="10" pin="1180,240" width="10" x="115" y="105"/>
-      <circ-port height="8" pin="200,160" width="8" x="36" y="56"/>
       <circ-port height="8" pin="200,310" width="8" x="86" y="176"/>
+      <circ-port height="8" pin="200,160" width="8" x="36" y="56"/>
+      <circ-port height="8" pin="200,250" width="8" x="36" y="166"/>
       <polyline fill="none" points="40,21 40,100" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="40,100 59,115" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="40,130 59,116" stroke="#000000" stroke-width="2"/>
@@ -146,6 +146,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(570,570)" to="(570,580)"/>
     <wire from="(570,770)" to="(570,780)"/>
     <wire from="(970,650)" to="(970,660)"/>
+    <wire from="(1160,400)" to="(1160,420)"/>
     <wire from="(570,690)" to="(620,690)"/>
     <wire from="(870,230)" to="(870,240)"/>
     <wire from="(170,610)" to="(170,620)"/>
@@ -160,7 +161,6 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(190,710)" to="(190,730)"/>
     <wire from="(990,640)" to="(1030,640)"/>
     <wire from="(1000,740)" to="(1000,890)"/>
-    <wire from="(930,370)" to="(930,390)"/>
     <wire from="(200,930)" to="(240,930)"/>
     <wire from="(210,660)" to="(250,660)"/>
     <wire from="(830,890)" to="(1000,890)"/>
@@ -170,7 +170,6 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(130,820)" to="(220,820)"/>
     <wire from="(600,710)" to="(620,710)"/>
     <wire from="(1010,750)" to="(1010,920)"/>
-    <wire from="(1030,390)" to="(1030,430)"/>
     <wire from="(830,830)" to="(980,830)"/>
     <wire from="(270,740)" to="(290,740)"/>
     <wire from="(300,450)" to="(320,450)"/>
@@ -178,7 +177,6 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(310,740)" to="(330,740)"/>
     <wire from="(350,740)" to="(370,740)"/>
     <wire from="(220,100)" to="(220,140)"/>
-    <wire from="(870,480)" to="(960,480)"/>
     <wire from="(1050,770)" to="(1050,830)"/>
     <wire from="(1160,160)" to="(1160,220)"/>
     <wire from="(1000,740)" to="(1030,740)"/>
@@ -187,13 +185,12 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(200,310)" to="(220,310)"/>
     <wire from="(220,180)" to="(220,230)"/>
     <wire from="(90,100)" to="(90,340)"/>
+    <wire from="(900,420)" to="(900,480)"/>
     <wire from="(560,390)" to="(630,390)"/>
     <wire from="(560,430)" to="(630,430)"/>
     <wire from="(1070,690)" to="(1100,690)"/>
     <wire from="(830,770)" to="(960,770)"/>
     <wire from="(830,800)" to="(970,800)"/>
-    <wire from="(1050,400)" to="(1070,400)"/>
-    <wire from="(1090,400)" to="(1110,400)"/>
     <wire from="(990,590)" to="(990,640)"/>
     <wire from="(560,680)" to="(570,680)"/>
     <wire from="(950,690)" to="(1030,690)"/>
@@ -207,6 +204,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(130,900)" to="(130,910)"/>
     <wire from="(870,230)" to="(930,230)"/>
     <wire from="(1000,560)" to="(1000,630)"/>
+    <wire from="(990,430)" to="(1050,430)"/>
     <wire from="(560,480)" to="(620,480)"/>
     <wire from="(560,520)" to="(620,520)"/>
     <wire from="(130,900)" to="(180,900)"/>
@@ -216,11 +214,15 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(220,270)" to="(220,290)"/>
     <wire from="(990,730)" to="(1030,730)"/>
     <wire from="(190,730)" to="(230,730)"/>
+    <wire from="(1140,390)" to="(1140,400)"/>
     <wire from="(830,710)" to="(940,710)"/>
+    <wire from="(1140,390)" to="(1190,390)"/>
     <wire from="(230,540)" to="(260,540)"/>
     <wire from="(1020,500)" to="(1020,610)"/>
+    <wire from="(900,380)" to="(920,380)"/>
     <wire from="(600,600)" to="(620,600)"/>
     <wire from="(600,800)" to="(620,800)"/>
+    <wire from="(850,340)" to="(850,380)"/>
     <wire from="(850,300)" to="(1000,300)"/>
     <wire from="(940,680)" to="(1030,680)"/>
     <wire from="(240,890)" to="(240,930)"/>
@@ -233,7 +235,9 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(240,890)" to="(250,890)"/>
     <wire from="(830,650)" to="(970,650)"/>
     <wire from="(680,410)" to="(690,410)"/>
+    <wire from="(930,340)" to="(930,390)"/>
     <wire from="(1160,240)" to="(1180,240)"/>
+    <wire from="(850,400)" to="(930,400)"/>
     <wire from="(560,570)" to="(570,570)"/>
     <wire from="(560,770)" to="(570,770)"/>
     <wire from="(590,720)" to="(600,720)"/>
@@ -249,23 +253,26 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(570,220)" to="(630,220)"/>
     <wire from="(120,420)" to="(170,420)"/>
     <wire from="(940,680)" to="(940,710)"/>
-    <wire from="(870,410)" to="(970,410)"/>
     <wire from="(930,670)" to="(1030,670)"/>
+    <wire from="(1020,460)" to="(1190,460)"/>
     <wire from="(250,630)" to="(250,660)"/>
+    <wire from="(1030,400)" to="(1140,400)"/>
     <wire from="(130,750)" to="(230,750)"/>
+    <wire from="(1190,410)" to="(1190,460)"/>
     <wire from="(1160,260)" to="(1160,310)"/>
     <wire from="(1010,620)" to="(1030,620)"/>
     <wire from="(560,730)" to="(580,730)"/>
     <wire from="(280,800)" to="(310,800)"/>
     <wire from="(660,700)" to="(690,700)"/>
     <wire from="(340,430)" to="(360,430)"/>
-    <wire from="(1020,460)" to="(1050,460)"/>
     <wire from="(170,620)" to="(190,620)"/>
     <wire from="(200,250)" to="(220,250)"/>
     <wire from="(560,290)" to="(630,290)"/>
     <wire from="(560,330)" to="(630,330)"/>
     <wire from="(250,630)" to="(260,630)"/>
     <wire from="(920,380)" to="(920,440)"/>
+    <wire from="(1160,400)" to="(1190,400)"/>
+    <wire from="(1070,420)" to="(1160,420)"/>
     <wire from="(110,410)" to="(120,410)"/>
     <wire from="(680,500)" to="(690,500)"/>
     <wire from="(950,690)" to="(950,740)"/>
@@ -274,7 +281,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(180,720)" to="(180,780)"/>
     <wire from="(980,650)" to="(1030,650)"/>
     <wire from="(570,680)" to="(570,690)"/>
-    <wire from="(870,380)" to="(920,380)"/>
+    <wire from="(930,400)" to="(930,410)"/>
     <wire from="(110,610)" to="(170,610)"/>
     <wire from="(990,420)" to="(990,430)"/>
     <wire from="(110,650)" to="(170,650)"/>
@@ -284,7 +291,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(960,700)" to="(960,770)"/>
     <wire from="(220,330)" to="(220,340)"/>
     <wire from="(870,210)" to="(930,210)"/>
-    <wire from="(870,370)" to="(930,370)"/>
+    <wire from="(900,480)" to="(960,480)"/>
     <wire from="(970,710)" to="(1030,710)"/>
     <wire from="(130,880)" to="(180,880)"/>
     <wire from="(130,720)" to="(180,720)"/>
@@ -292,9 +299,9 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(320,430)" to="(320,450)"/>
     <wire from="(970,710)" to="(970,800)"/>
     <wire from="(920,440)" to="(960,440)"/>
+    <wire from="(930,410)" to="(970,410)"/>
     <wire from="(200,910)" to="(200,930)"/>
-    <wire from="(990,430)" to="(1030,430)"/>
-    <wire from="(1030,390)" to="(1070,390)"/>
+    <wire from="(850,400)" to="(850,420)"/>
     <wire from="(830,560)" to="(1000,560)"/>
     <wire from="(180,780)" to="(220,780)"/>
     <wire from="(290,730)" to="(330,730)"/>
@@ -308,15 +315,16 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(660,790)" to="(690,790)"/>
     <wire from="(1160,310)" to="(1360,310)"/>
     <wire from="(970,220)" to="(1000,220)"/>
-    <wire from="(1050,400)" to="(1050,460)"/>
     <wire from="(170,550)" to="(190,550)"/>
-    <wire from="(870,420)" to="(870,480)"/>
+    <wire from="(850,380)" to="(880,380)"/>
+    <wire from="(850,420)" to="(880,420)"/>
     <wire from="(960,700)" to="(1030,700)"/>
     <wire from="(210,440)" to="(220,440)"/>
     <wire from="(110,460)" to="(120,460)"/>
     <wire from="(310,740)" to="(310,800)"/>
     <wire from="(1020,610)" to="(1030,610)"/>
     <wire from="(680,310)" to="(690,310)"/>
+    <wire from="(850,340)" to="(930,340)"/>
     <wire from="(560,230)" to="(570,230)"/>
     <wire from="(560,190)" to="(570,190)"/>
     <wire from="(130,760)" to="(130,820)"/>
@@ -810,119 +818,9 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="B"/>
     </comp>
     <comp lib="3" loc="(1010,400)" name="Multiplier">
-      <a name="width" val="31"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="1" loc="(1020,460)" name="XOR Gate"/>
-    <comp lib="0" loc="(1110,400)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="add14"/>
-    </comp>
-    <comp lib="0" loc="(850,420)" name="Splitter">
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-      <a name="bit17" val="0"/>
-      <a name="bit18" val="0"/>
-      <a name="bit19" val="0"/>
-      <a name="bit20" val="0"/>
-      <a name="bit21" val="0"/>
-      <a name="bit22" val="0"/>
-      <a name="bit23" val="0"/>
-      <a name="bit24" val="0"/>
-      <a name="bit25" val="0"/>
-      <a name="bit26" val="0"/>
-      <a name="bit27" val="0"/>
-      <a name="bit28" val="0"/>
-      <a name="bit29" val="0"/>
-      <a name="bit30" val="0"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(850,380)" name="Splitter">
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-      <a name="bit17" val="0"/>
-      <a name="bit18" val="0"/>
-      <a name="bit19" val="0"/>
-      <a name="bit20" val="0"/>
-      <a name="bit21" val="0"/>
-      <a name="bit22" val="0"/>
-      <a name="bit23" val="0"/>
-      <a name="bit24" val="0"/>
-      <a name="bit25" val="0"/>
-      <a name="bit26" val="0"/>
-      <a name="bit27" val="0"/>
-      <a name="bit28" val="0"/>
-      <a name="bit29" val="0"/>
-      <a name="bit30" val="0"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1090,400)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-      <a name="bit17" val="0"/>
-      <a name="bit18" val="0"/>
-      <a name="bit19" val="0"/>
-      <a name="bit20" val="0"/>
-      <a name="bit21" val="0"/>
-      <a name="bit22" val="0"/>
-      <a name="bit23" val="0"/>
-      <a name="bit24" val="0"/>
-      <a name="bit25" val="0"/>
-      <a name="bit26" val="0"/>
-      <a name="bit27" val="0"/>
-      <a name="bit28" val="0"/>
-      <a name="bit29" val="0"/>
-      <a name="bit30" val="0"/>
-      <a name="bit31" val="1"/>
-    </comp>
     <comp lib="0" loc="(850,380)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
@@ -1059,6 +957,187 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="0" loc="(300,450)" name="Constant">
       <a name="width" val="31"/>
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1210,400)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="add14"/>
+    </comp>
+    <comp lib="0" loc="(880,380)" name="Splitter">
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+      <a name="bit28" val="0"/>
+      <a name="bit29" val="0"/>
+      <a name="bit30" val="0"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(880,420)" name="Splitter">
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+      <a name="bit28" val="0"/>
+      <a name="bit29" val="0"/>
+      <a name="bit30" val="0"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1010,400)" name="Splitter">
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+      <a name="bit28" val="0"/>
+      <a name="bit29" val="0"/>
+      <a name="bit30" val="0"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1050,430)" name="Splitter">
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+      <a name="bit17" val="0"/>
+      <a name="bit18" val="0"/>
+      <a name="bit19" val="0"/>
+      <a name="bit20" val="0"/>
+      <a name="bit21" val="0"/>
+      <a name="bit22" val="0"/>
+      <a name="bit23" val="0"/>
+      <a name="bit24" val="0"/>
+      <a name="bit25" val="0"/>
+      <a name="bit26" val="0"/>
+      <a name="bit27" val="0"/>
+      <a name="bit28" val="0"/>
+      <a name="bit29" val="0"/>
+      <a name="bit30" val="0"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1210,400)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="1"/>
+      <a name="bit15" val="1"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="2"/>
     </comp>
   </circuit>
 </project>
