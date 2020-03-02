@@ -237,6 +237,7 @@
     <wire from="(1760,360)" to="(1760,370)"/>
     <wire from="(870,190)" to="(870,220)"/>
     <wire from="(580,860)" to="(580,890)"/>
+    <wire from="(200,130)" to="(240,130)"/>
     <wire from="(1250,210)" to="(1300,210)"/>
     <wire from="(1800,430)" to="(1860,430)"/>
     <wire from="(600,910)" to="(620,910)"/>
@@ -271,8 +272,8 @@
     <wire from="(990,880)" to="(1000,880)"/>
     <wire from="(280,890)" to="(340,890)"/>
     <wire from="(910,450)" to="(960,450)"/>
-    <wire from="(910,570)" to="(960,570)"/>
     <wire from="(910,530)" to="(960,530)"/>
+    <wire from="(910,570)" to="(960,570)"/>
     <wire from="(1070,370)" to="(1070,390)"/>
     <wire from="(1110,370)" to="(1110,390)"/>
     <wire from="(1150,370)" to="(1150,390)"/>
@@ -282,7 +283,6 @@
     <wire from="(2020,490)" to="(2060,490)"/>
     <wire from="(1270,370)" to="(1270,390)"/>
     <wire from="(1410,190)" to="(1410,220)"/>
-    <wire from="(190,130)" to="(240,130)"/>
     <wire from="(1200,620)" to="(1200,650)"/>
     <wire from="(1050,190)" to="(1050,220)"/>
     <wire from="(1800,420)" to="(1800,430)"/>
@@ -367,11 +367,6 @@
     <comp lib="6" loc="(412,49)" name="Text">
       <a name="text" val="IMEM (do **NOT** move this)"/>
       <a name="font" val="SansSerif bold 22"/>
-    </comp>
-    <comp lib="0" loc="(190,130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="PROGRAM_COUNTER"/>
     </comp>
     <comp lib="0" loc="(270,160)" name="Pin">
       <a name="facing" val="west"/>
@@ -479,10 +474,6 @@
       <a name="facing" val="north"/>
       <a name="width" val="32"/>
       <a name="label" val="a0"/>
-    </comp>
-    <comp lib="6" loc="(822,1175)" name="Text">
-      <a name="text" val="It is OK to move the PC, RegFile, ALU, and MEM to wherever is most convenient for you when constructing your CPU, and to delete this text"/>
-      <a name="font" val="SansSerif plain 22"/>
     </comp>
     <comp lib="0" loc="(340,800)" name="Tunnel">
       <a name="width" val="7"/>
@@ -754,23 +745,6 @@
       <a name="width" val="32"/>
       <a name="label" val="write_reg"/>
     </comp>
-    <comp lib="4" loc="(740,1000)" name="Register">
-      <a name="width" val="5"/>
-    </comp>
-    <comp lib="0" loc="(670,1050)" name="Constant"/>
-    <comp lib="0" loc="(710,1070)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="0" loc="(710,1030)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="5"/>
-      <a name="label" val="rs1"/>
-    </comp>
-    <comp lib="0" loc="(830,1030)" name="Tunnel">
-      <a name="width" val="5"/>
-      <a name="label" val="rs1_IF"/>
-    </comp>
     <comp lib="0" loc="(2520,490)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="Read_data"/>
@@ -828,6 +802,15 @@
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
       <a name="label" val="rs1"/>
+    </comp>
+    <comp lib="6" loc="(886,1749)" name="Text">
+      <a name="text" val="It is OK to move the PC, RegFile, ALU, and MEM to wherever is most convenient for you when constructing your CPU, and to delete this text"/>
+      <a name="font" val="SansSerif plain 22"/>
+    </comp>
+    <comp lib="0" loc="(200,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="PROGRAM_COUNTER"/>
     </comp>
   </circuit>
 </project>
