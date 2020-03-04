@@ -1327,7 +1327,6 @@
     </comp>
     <comp lib="0" loc="(1760,640)" name="Constant">
       <a name="facing" val="north"/>
-      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(2550,600)" name="Constant">
       <a name="facing" val="north"/>
